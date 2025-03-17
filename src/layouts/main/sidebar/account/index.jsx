@@ -1,5 +1,6 @@
-import { Popover } from "@headlessui/react"
+import { Popover, Transition } from "@headlessui/react"
 import { useAccount } from "~/store/auth/hooks"
+import More from "./more";
 
 export default function Account() {
 
@@ -7,7 +8,7 @@ export default function Account() {
 
     return (
         <div className="mt-auto">
-            <Popover>
+            <Popover className="relative">
                 <Popover.Button className="my-3 p-3 rounded-full hover:bg-[#eff3f41a] w-full flex text-left items-center outline-none">
                     <img src={account?.avatar} alt="avatar" className="w-10 h-10 rounded-full" />
                     <div className="mx-3 text-[15px]">
@@ -25,9 +26,18 @@ export default function Account() {
                     </div>
 
                 </Popover.Button>
-                <Popover.Panel>
-                    Açılacak yer!
-                </Popover.Panel>
+                <Transition
+                    enter="transition duration-200 ease-out"
+                    enterFrom="transform opacity-0"
+                    enterTo="transform opacity-100"
+                    leave="transition duration-200 ease-out"
+                    leaveFrom="transform opacity-100"
+                    leaveTo="transform opacity-0"
+                >
+                    <Popover.Panel className="absolute bottom-full py-3 w-[300px] left-1/2 -translate-x-1/2 bg-black rounded-2xl bg-black shadow-[0_0_15px_rgba(255,255,255,0.2)] border border-[#2f3336] overflow-hidden">
+                        <More />
+                    </Popover.Panel>
+                </Transition>
             </Popover>
         </div>
     )

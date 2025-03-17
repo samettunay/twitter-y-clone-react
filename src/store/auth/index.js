@@ -3,11 +3,24 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     currentAccount: {
         id: 1,
-        fullname: 'Samet Tunay',
-        username: 'Samettunayyy7',
+        fullname: 'Bruce Wayne',
+        username: 'Batman',
         avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png',
     },
-    accounts: [],
+    accounts: [
+        {
+            id: 1,
+            fullname: 'Bruce Wayne',
+            username: 'Batman',
+            avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png',
+        },
+        {
+            id: 2,
+            fullname: 'Peter Parker',
+            username: 'Spiderman',
+            avatar: 'https://cdn4.iconfinder.com/data/icons/diversity-v2-0-volume-03/64/superhero-spiderman-comics-512.png',
+        },
+    ],
 };
 
 const auth = createSlice({

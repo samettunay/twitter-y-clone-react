@@ -89,7 +89,7 @@ export const mainMenu = [
         }
     },
     {
-        path: "/i/grok",
+        path: "/grok",
         title: "Grok",
         icon: {
             active: (
@@ -111,7 +111,7 @@ export const mainMenu = [
         }
     },
     {
-        path: "/i/bookmarks",
+        path: "/bookmarks",
         title: "Yer İşaretleri",
         icon: {
             active: (
@@ -177,7 +177,7 @@ export const mainMenu = [
         }
     },
     {
-        path: "/i/premium_sign_up",
+        path: "/premium_sign_up",
         title: "Premium",
         icon: {
             active: (
@@ -199,7 +199,7 @@ export const mainMenu = [
         }
     },
     {
-        path: "/i/verified-orgs-signup",
+        path: "/verified-orgs-signup",
         title: "Onaylı Kuruluşlar",
         icon: {
             active: (
