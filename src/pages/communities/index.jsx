@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Bookmarks() {
+export default function Communities() {
     return (
         <div>
             <Helmet>
-                <title>Bookmarks / Y</title>
+                <title>Communities / Y</title>
             </Helmet>
-            Bookmarks page
+            Communities Component!
         </div>
     )
 }

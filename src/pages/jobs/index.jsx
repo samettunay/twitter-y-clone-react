@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Bookmarks() {
+export default function Jobs() {
     return (
         <div>
             <Helmet>
-                <title>Bookmarks / Y</title>
+                <title>Jobs / Y</title>
             </Helmet>
-            Bookmarks page
+            Jobs Component!
         </div>
     )
 }

@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Bookmarks() {
+export default function Premium() {
     return (
         <div>
             <Helmet>
-                <title>Bookmarks / Y</title>
+                <title>Premium / Y</title>
             </Helmet>
-            Bookmarks page
+            Premium Component!
         </div>
     )
 }

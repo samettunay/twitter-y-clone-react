@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Bookmarks() {
+export default function Grok() {
     return (
         <div>
             <Helmet>
-                <title>Bookmarks / Y</title>
+                <title>Grok / Y</title>
             </Helmet>
-            Bookmarks page
+            Grok Component!
         </div>
     )
 }

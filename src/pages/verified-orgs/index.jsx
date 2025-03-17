@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 
-export default function Bookmarks() {
+export default function VerifiedOrgs() {
     return (
         <div>
             <Helmet>
-                <title>Bookmarks / Y</title>
+                <title>Verified Orgs / Y</title>
             </Helmet>
-            Bookmarks page
+            Verified Orgs Component!
         </div>
     )
 }

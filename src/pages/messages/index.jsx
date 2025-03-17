@@ -1,7 +1,12 @@
+import { Helmet } from 'react-helmet'
+
 export default function Messages() {
     return (
         <div>
-            messages page
+            <Helmet>
+                <title>Messages / Y</title>
+            </Helmet>
+            Messages Component!
         </div>
     )
 }
