@@ -5,7 +5,7 @@ const states = store.getState();
 export const mainMenu = [
     {
         path: "/",
-        title: "Anasayfa",
+        title: "Home",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -25,7 +25,7 @@ export const mainMenu = [
     },
     {
         path: "/explore",
-        title: "Keşfet",
+        title: "Explore",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -45,7 +45,7 @@ export const mainMenu = [
     },
     {
         path: "/notifications",
-        title: "Bildirimler",
+        title: "Notifications",
         notificationCount: 4,
         icon: {
             active: (
@@ -68,7 +68,7 @@ export const mainMenu = [
     },
     {
         path: "/messages",
-        title: "Mesajlar",
+        title: "Messages",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -112,7 +112,7 @@ export const mainMenu = [
     },
     {
         path: "/bookmarks",
-        title: "Yer İşaretleri",
+        title: "Bookmarks",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -134,7 +134,7 @@ export const mainMenu = [
     },
     {
         path: "/jobs",
-        title: "İşler",
+        title: "Jobs",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -156,7 +156,7 @@ export const mainMenu = [
     },
     {
         path: "/communities",
-        title: "Topluluklar",
+        title: "Communities",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -177,7 +177,7 @@ export const mainMenu = [
         }
     },
     {
-        path: "/premium_sign_up",
+        path: "/premium",
         title: "Premium",
         icon: {
             active: (
@@ -199,8 +199,8 @@ export const mainMenu = [
         }
     },
     {
-        path: "/verified-orgs-signup",
-        title: "Onaylı Kuruluşlar",
+        path: "/verified-orgs",
+        title: "Verified Orgs",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -222,7 +222,7 @@ export const mainMenu = [
     },
     {
         path: `/${states?.auth?.currentAccount?.username}`,
-        title: "Profil",
+        title: "Profile",
         icon: {
             active: (
                 <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">

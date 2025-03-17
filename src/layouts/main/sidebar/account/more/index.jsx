@@ -40,16 +40,16 @@ export default function More({ close }) {
 			<div className="h-px bg-[#2f3336] my-3"/>
 			<button
 				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
-				Var olan bir hesap ekle
+				Add an existing account
 			</button>
 			<button
 				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
-				Hesapları yönet
+				Manage accounts
 			</button>
 			<button
 				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
 				<div className="max-w-[228px]">
-					@{currentAccount.username} hesabından çıkış yap
+					Log out of @{currentAccount.username}
 				</div>
 			</button>
 		</>

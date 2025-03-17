@@ -14,11 +14,11 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl">
-                        Daha Fazla
+                        More
                     </div>
                 </div>
             </Popover.Button>
-            <Popover.Panel className="w-[384px] absolute bottom-[0] overflow-hidden rounded-xl bg-black shadow-[0_0_15px_rgba(255,255,255,0.2)] border border-[#2f3336] overflow-hidden">
+            <Popover.Panel className="w-[318px] absolute bottom-[0] overflow-hidden rounded-xl bg-black shadow-[0_0_15px_rgba(255,255,255,0.2)] border border-[#2f3336] overflow-hidden">
                 <button className="p-3 h-14 w-full transition-colors inline-flex items-center gap-5 hover:bg-[#eff3f41a]">
                     <div className="w-[26.25px] h-[26.25px] relative">
                         <svg viewBox="0 0 24 24" width="26.25" height="26.25" className="block">
@@ -29,7 +29,7 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl font-bold">
-                        Listeler
+                        Lists
                     </div>
                 </button>
 
@@ -43,7 +43,7 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl font-bold">
-                        Para kazanma
+                        Monetization
                     </div>
                 </button>
 
@@ -57,7 +57,7 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl font-bold">
-                        Reklamlar
+                        Ads
                     </div>
                 </button>
 
@@ -71,7 +71,7 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl font-bold">
-                        Sohbet Odanı oluştur
+                        Create your Space
                     </div>
                 </button>
 
@@ -85,7 +85,7 @@ export default function More() {
                         </svg>
                     </div>
                     <div className="pr-4 text-xl font-bold">
-                        Ayarlar ve gizlilik
+                        Settings and privacy
                     </div>
                 </button>
             </Popover.Panel>
