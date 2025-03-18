@@ -1,10 +1,19 @@
-import { useState } from "react"
+import { useRef, useState } from "react";
+import { useClickAway } from 'react-use';
 
 export default function Search() {
     const [query, setQuery] = useState('')
+    const [focus, setFocus] = useState(false)
+    const ref = useRef()
+
+    useClickAway(ref, () => {
+        setFocus(false)
+    });
 
     return (
-        <div className="min-h-[32px] h-[52px] mb-3 flex items-center">
+        <div
+            ref={ref}
+            className="min-h-[32px] h-[52px] mb-3 flex items-center relative">
             <label className="h-[43px] rounded-full w-full group relative border border-[#333639] focus-within:border-[#1d9bf0] focus-within:border-2 transition-all duration-200">
                 <div className="w-[28px] h-[43px] pl-3 flex items-center justify-center absolute top-0 left-0">
                     <svg
@@ -20,9 +29,11 @@ export default function Search() {
                     placeholder="Search"
                     className="w-full h-full rounded-full outline-none pl-[32px] bg-transparent text-[15px]"
                     value={query}
+                    onFocus={() => setFocus(true)}
+                    onBlur={() => setFocus(false)}
                     onChange={(e) => setQuery(e.target.value)}
                 />
-                {query && (
+                {(query && focus) && (
                     <button
                         type="button"
                         onClick={() => setQuery('')}
@@ -35,6 +46,13 @@ export default function Search() {
                     </button>
                 )}
             </label>
+            {focus && (
+                <div className="absolute w-[350px] top-full -left-px -translate-y-1 shadow-[0_0_15px_rgba(255,255,255,0.2)] max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
+                    <p className="p-3 pt-[20px] text-[#71767b] leading-5 text-[15px]">
+                        Try searching for people, lists, or keywords
+                    </p>
+                </div>
+            )}
         </div>
     )
 }
