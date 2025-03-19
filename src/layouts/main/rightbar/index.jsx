@@ -5,7 +5,7 @@ import WhoFollow from "./who-fallow";
 import Footer from "./footer";
 export default function RightBar() {
     return (
-        <aside className="w-[350px] mr-2.5">
+        <aside className="w-[350px] mr-2.5 pb-16">
             <Search />
             <Premium />
             <Topics />
