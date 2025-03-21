@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { setBackgroundColor, setBoxShadow, setColor, setFontSize } from "~/store/appearance/actions";
 import { colors, fontSizes } from "~/utils/consts";
 import { useEffect, useState } from "react";
+import Logo from "~/layouts/main/sidebar/logo";
 
 export default function AppearanceModal({ close }) {
 
@@ -27,15 +28,11 @@ export default function AppearanceModal({ close }) {
                 </p>
                 <div className="mx-8 mb-4">
                     <div className="border border-[color:var(--background-third)] px-4 flex py-3 gap-3 rounded-2xl">
-                        <img
-                            src="https://pbs.twimg.com/profile_images/1683899100922511378/5lY42eHs_x96.jpg"
-                            alt=""
-                            className="w-10 h-10 rounded-full object-cover"
-                        />
+                        <Logo />
                         <div className="flex-1 flex flex-col">
                             <header className="mb-0.5 leading-5 flex items-center">
                                 <div className="font-bold flex items-center">
-                                    X
+                                    Y
                                     <svg viewBox="0 0 22 22" height={18.75} className="text-[#1d9bf0] ml-0.5">
                                         <path
                                             fill="currentColor"
@@ -44,13 +41,13 @@ export default function AppearanceModal({ close }) {
                                     </svg>
                                 </div>
                                 <div className="ml-1 flex items-center text-[color:var(--color-base-secondary)]">
-                                    @X · 2h
+                                    @Y · 2h
                                 </div>
                             </header>
                             <div className="text-[color:var(--color-base)] leading-5">
-                                At the heart of X are short messages called posts -- just like this one --
+                                At the heart of Y are short messages called posts -- just like this one --
                                 which can include photos, videos, links, text, hashtags, and mentions like <Link className="text-[#1d9bf0] hover:underline"
-                                    to="/x">@X</Link>.
+                                    to="/y">@Y</Link>.
                             </div>
                         </div>
                     </div>
