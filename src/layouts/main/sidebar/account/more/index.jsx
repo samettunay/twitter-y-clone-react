@@ -18,12 +18,12 @@ export default function More({ close }) {
 						close()
 					}}
 					className={classNames("py-3 px-4 flex items-center text-left w-full transition-colors", {
-						"hover:bg-[#eff3f41a]": currentAccount.id !== account.id
+						"hover:bg-[color:var(--background-third)]": currentAccount.id !== account.id
 					})}
 				>
 					<img src={account.avatar} className="w-10 h-10 rounded-full" alt=""/>
 					<div className="mx-3 flex-1">
-						<h6 className="font-bold leading-[1.25rem]">{account.fullName}</h6>
+						<h6 className="font-bold leading-[1.25rem] text-[color:var(--color-base)]">{account.fullName}</h6>
 						<div className="text-[color:var(--color-base-secondary)]">
 							@{account.username}
 						</div>
@@ -37,17 +37,17 @@ export default function More({ close }) {
 					)}
 				</button>
 			))}
-			<div className="h-px bg-[#2f3336] my-3"/>
+			<div className="h-px bg-[color:var(--background-border)] my-3"/>
 			<button
-				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
+				className="py-3 px-4 text-[color:var(--color-base)] text-left transition-colors hover:bg-[color:var(--background-third)] w-full font-bold leading-[1.25rem]">
 				Add an existing account
 			</button>
 			<button
-				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
+				className="py-3 px-4 text-[color:var(--color-base)] text-left transition-colors hover:bg-[color:var(--background-third)] w-full font-bold leading-[1.25rem]">
 				Manage accounts
 			</button>
 			<button
-				className="py-3 px-4 text-left transition-colors hover:bg-[#eff3f41a] w-full font-bold leading-[1.25rem]">
+				className="py-3 px-4 text-[color:var(--color-base)] text-left transition-colors hover:bg-[color:var(--background-third)] w-full font-bold leading-[1.25rem]">
 				<div className="max-w-[228px]">
 					Log out of @{currentAccount.username}
 				</div>

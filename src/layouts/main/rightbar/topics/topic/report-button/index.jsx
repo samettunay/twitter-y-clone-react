@@ -1,6 +1,6 @@
 export default function ReportButton({title, icon, onClick}) {
     return (
-        <button type="button" className="hover:bg-[#080808] transition-colors text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold ">
+        <button type="button" className="hover:bg-[color:var(--background-third)] transition-colors text-left py-3 px-4 flex items-center gap-3 leading-5 font-bold text-[color:var(--color-base)]">
             <svg viewBox="0 0 24 24" className="h-[1.172rem]">
                 <path
                     fill="currentColor"

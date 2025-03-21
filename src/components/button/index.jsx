@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function Button({ children, size = "normal", className, onClick, onMouseEnter, onMouseLeave }) {
   return createElement("button", {
-    className: classNames("rounded-full text-black flex items-center justify-center font-bold hover:bg-[#e1e8ed] transition-colors", {
+    className: classNames("rounded-full text-[color:var(--color-base)] flex items-center justify-center font-bold hover:bg-[color:var(--color-primary)]/80 transition-colors", {
         "px-4 h-9": size === "normal",
         "px-6 text-[17px] h-[52px] w-full": size === "large",
     }, className),

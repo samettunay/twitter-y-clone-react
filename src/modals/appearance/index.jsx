@@ -18,12 +18,12 @@ export default function AppearanceModal({ close }) {
 
     return (
         <div className="w-[600px]">
-            <h3 className="mt-8 mb-3 text-[1.438rem] leading-7 font-extrabold text-center">
-                Görünümünü özelleştir
+            <h3 className="mt-8 mb-3 text-[1.438rem] text-[color:var(--color-base)] leading-7 font-extrabold text-center">
+                Display
             </h3>
             <div className="p-8 pt-0">
                 <p className="text-center text-[color:var(--color-base-secondary)] leading-5 text-[0.938rem] mb-5">
-                    Bu ayarlar, bu tarayıcıdaki tüm X hesaplarını etkiler.
+                    Manage your font size, color, and background. These settings affect all the X accounts on this browser.
                 </p>
                 <div className="mx-8 mb-4">
                     <div className="border border-[color:var(--background-third)] px-4 flex py-3 gap-3 rounded-2xl">
@@ -44,13 +44,13 @@ export default function AppearanceModal({ close }) {
                                     </svg>
                                 </div>
                                 <div className="ml-1 flex items-center text-[color:var(--color-base-secondary)]">
-                                    @X · 31d
+                                    @X · 2h
                                 </div>
                             </header>
                             <div className="text-[color:var(--color-base)] leading-5">
-                                X'in merkezinde, tıpkı bunun gibi gönderi denen kısa mesajlar yatar. Gönderiler; fotoğraflar, videolar,
-                                bağlantılar, metinler, etiketler ve <Link className="text-[#1d9bf0] hover:underline"
-                                    to="/x">@X</Link> gibi bahsetmeler içerebilir.
+                                At the heart of X are short messages called posts -- just like this one --
+                                which can include photos, videos, links, text, hashtags, and mentions like <Link className="text-[#1d9bf0] hover:underline"
+                                    to="/x">@X</Link>.
                             </div>
                         </div>
                     </div>
@@ -58,8 +58,7 @@ export default function AppearanceModal({ close }) {
 
                 <div className="grid gap-3">
                     <section>
-                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Yazı tipi
-                            boyutu</h6>
+                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Font size</h6>
                         <div className="bg-[color:var(--background-secondary)] p-4 rounded-2xl flex items-center gap-5">
                             <div className="text-[0.813rem]">Aa</div>
                             <div className="h-1 bg-[color:var(--color-secondary)] flex-1 rounded-full relative">
@@ -92,7 +91,7 @@ export default function AppearanceModal({ close }) {
                     </section>
 
                     <section>
-                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Renk</h6>
+                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Color</h6>
                         <div className="bg-[color:var(--background-secondary)] py-2 rounded-2xl flex justify-around items-center">
                             {colors.map((c, index) => (
                                 <button
@@ -118,7 +117,7 @@ export default function AppearanceModal({ close }) {
                     </section>
 
                     <section>
-                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Arka plan</h6>
+                        <h6 className="text-[color:var(--color-base-secondary)] mb-1 leading-5 text-[13px] font-bold">Background</h6>
                         <div className="py-2 px-4 mb-3 grid gap-2 grid-cols-3 bg-[color:var(--background-secondary)] rounded-2xl">
                             <button
                                 onClick={() => {
@@ -132,11 +131,12 @@ export default function AppearanceModal({ close }) {
                                         primary: '#ffffff',
                                         secondary: '#f7f9f9',
                                         third: '#eff3f4',
-                                        modal: '#00000066'
+                                        modal: '#00000066',
+                                        border: '#eff3f4'
                                     })
                                     setBoxShadow('rgba(101, 119, 134, 0.2) 0px 0px 15px, rgba(101, 119, 134, 0.15) 0px 0px 3px 1px')
                                 }}
-                                className={classNames("h-[62px] pr-3 pl-2 bg-white text-[#0f1419] border font-bold border-white/10 rounded group flex items-center gap-1.5", {
+                                className={classNames("h-[62px] pr-3 pl-2 bg-white text-[color:var(--color-base)] border font-bold border-white/10 rounded group flex items-center gap-1.5", {
                                     "!border-[color:var(--color-primary)] !border-2": backgroundColor.name === 'light'
                                 })}
                             >
@@ -156,8 +156,8 @@ export default function AppearanceModal({ close }) {
                                         )}
                                     </div>
                                 </div>
-                                <div className="truncate">
-                                    Varsayılan
+                                <div className="truncate text-black">
+                                    Default
                                 </div>
                             </button>
                             <button
@@ -172,7 +172,8 @@ export default function AppearanceModal({ close }) {
                                         primary: '#15202b',
                                         secondary: '#1e2732',
                                         third: '#263340',
-                                        modal: '#5b708366'
+                                        modal: '#5b708366',
+                                        border: '#2f3336'
                                     })
                                     setBoxShadow('rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px')
                                 }}
@@ -196,8 +197,8 @@ export default function AppearanceModal({ close }) {
                                         )}
                                     </div>
                                 </div>
-                                <div className="truncate">
-                                    Loş
+                                <div className="truncate text-white">
+                                    Dim
                                 </div>
                             </button>
                             <button
@@ -212,11 +213,12 @@ export default function AppearanceModal({ close }) {
                                         primary: '#000000',
                                         secondary: '#16181c',
                                         third: '#212327',
-                                        modal: '#5b708366'
+                                        modal: '#5b708366',
+                                        border: '#2f3336'
                                     })
                                     setBoxShadow('rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px')
                                 }}
-                                className={classNames("h-[62px] pr-3 pl-2 bg-black text-[#f7f9f9] border font-bold border-white/10 rounded group flex items-center gap-1.5", {
+                                className={classNames("h-[62px] pr-3 pl-2 bg-black text-[color:var(--color-base)] border font-bold border-white/10 rounded group flex items-center gap-1.5", {
                                     "!border-[color:var(--color-primary)] !border-2": backgroundColor.name === 'darker'
                                 })}
                             >
@@ -236,8 +238,8 @@ export default function AppearanceModal({ close }) {
                                         )}
                                     </div>
                                 </div>
-                                <div className="truncate">
-                                    Işıklar kapalı
+                                <div className="truncate text-white">
+                                    Lights out
                                 </div>
                             </button>
                         </div>
@@ -245,7 +247,7 @@ export default function AppearanceModal({ close }) {
                 </div>
 
                 <div className="flex items-center justify-center pt-4">
-                    <Button onClick={close}>Bitti</Button>
+                    <Button className="bg-[color:var(--color-primary)] text-white" onClick={close}>Done</Button>
                 </div>
 
             </div>

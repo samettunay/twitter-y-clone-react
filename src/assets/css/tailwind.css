@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 body {
-    @apply bg-black text-white text-[15px] antialiased;
+    @apply bg-[color:var(--background-primary)] text-white text-[15px] antialiased;
 }
