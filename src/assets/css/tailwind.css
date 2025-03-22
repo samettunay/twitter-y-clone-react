@@ -1,5 +1,11 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-size: var(--font-size);
+}
 
 body {
-    @apply bg-[color:var(--background-primary)] text-white text-[15px] antialiased;
+    @apply bg-[color:var(--background-primary)] text-white text-[0.938rem] antialiased;
 }
