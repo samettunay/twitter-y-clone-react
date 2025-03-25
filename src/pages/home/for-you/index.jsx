@@ -17,6 +17,7 @@ export default function ForYou() {
 			}}
 		>
 			{posts.map((post, key) => <Post post={post} key={post.id + key} />)}
+            
 		</WindowVirtualizer>
 	)
 }
