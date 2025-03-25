@@ -1,14 +1,15 @@
 import { Helmet } from 'react-helmet'
 import Tab from '~/components/tab'
 import StickyHeader from '~/components/sticky-header'
+import ForYou from './for-you'
 
 export default function Home() {
-    return (
-        <>
-            <Helmet>
-                <title>Home / Y</title>
-            </Helmet>
-            <Tab activeTab="followings">
+	return (
+		<>
+			<Helmet>
+				<title>Home / Y</title>
+			</Helmet>
+			<Tab activeTab="for-you">
 				<StickyHeader>
 					<Tab.Items>
 						<Tab.Item id="for-you">
@@ -20,13 +21,13 @@ export default function Home() {
 					</Tab.Items>
 				</StickyHeader>
 				<Tab.Content id="for-you">
-					1. content
+					<ForYou />
 				</Tab.Content>
 				<Tab.Content id="followings">
 					2. content
 				</Tab.Content>
 			</Tab>
-        </>
-    )
+		</>
+	)
 
 }

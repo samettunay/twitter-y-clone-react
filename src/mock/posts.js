@@ -1,7 +1,7 @@
 export const posts = [
 	{
 		id: '1708632465282150796',
-		content: `Toplu günaydın, ben her sabah spora devam ama her gün post atmıyorum artık, max 4 günde bir atarım çünkü en fazla 4 foto paylaşılıyormuş 🤣`,
+		content: `"Gotham'da kira mı? Dostum, en büyük suç Joker değil… Ev fiyatları!" 😆🏙️🦇`,
 		photos: [
 			'https://pbs.twimg.com/media/F7VBIvaW0AIZyiX?format=jpg&name=large',
 			'https://pbs.twimg.com/media/F7VBIvZXEAAIpEM?format=jpg&name=large',
@@ -9,9 +9,9 @@ export const posts = [
 			'https://pbs.twimg.com/media/F7VBIvaWAAAWUsx?format=jpg&name=large',
 		],
 		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1665642354009677824/LNZo7V8x_400x400.jpg',
-			username: 'tayfunerbilen',
-			fullName: 'Tayfun Erbilen'
+			avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png',
+			username: 'Batman',
+			fullName: 'Bruce Wayne'
 		},
 		stats: {
 			comments: 43535,
@@ -22,7 +22,7 @@ export const posts = [
 	},
 	{
 		id: '1708632465282150796',
-		content: `Imagination Land!`,
+		content: `Batman, Gotham’da kira fiyatlarından şikayet ediyor… Dostum, belki de birkaç Dogecoin biriktirseydin, şimdi hala yarasa kostümüyle sokaklarda dolaşmak zorunda kalmazdın! 😆🚀💰🦇`,
 		photos: [
 			'https://pbs.twimg.com/media/F7ZIK8KWgAAP8pH?format=jpg&name=900x900'
 		],
@@ -41,17 +41,11 @@ export const posts = [
 	},
 	{
 		id: '1708704613141270652',
-		content: `Less than a week since OpenAI started rolling out ChatGPT vision.
-
-And people have been busy executing god-like tasks.
-
-35 truly mind-boggling examples:
-
-(29th is my favorite)`,
+		content: `"Elon, Dogecoin ile tüm dünyayı kandırıyorsun, Batman ise Gotham’ı… Ama ikiniz de bir şey unutuyorsunuz! Gerçek kaos... Herkesin sabah işe gitmeye zorlanması! Ahaha!" 🃏💸🦇`,
 		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1696215555148046336/xCMn27ZY_400x400.jpg',
-			username: 'sairahul1',
-			fullName: 'Sai Rahul',
+			avatar: 'https://cdn3.iconfinder.com/data/icons/hand-drawn-avatars/500/Avatars-19-512.png',
+			username: 'Joker',
+			fullName: 'Jack Napier',
 			verified: true
 		},
 		stats: {
@@ -63,7 +57,7 @@ And people have been busy executing god-like tasks.
 	},
 	{
 		id: '1708810187170087410',
-		content: `İstanbul'da Cumhuriyet'in 100. yılına özel, 100 gün boyunca Yerebatan Sarnıcı, Şerefiye Sarnıcı, Miniatürk ve Panorama 1453 Tarih Müzesi ücretsiz ziyaret edilebilecek.`,
+		content: `Kızlar, belki uçabiliyorum ama kalbimi yerden kaldırmakta zorlanıyorum... Yardım eder misiniz? 😎💘🦸‍♂️`,
 		photos: [
 			'https://pbs.twimg.com/media/F7bpqaKXkAAopDd?format=jpg&name=900x900',
 			'https://pbs.twimg.com/media/F7bptMoXYAA7TpB?format=jpg&name=900x900',
@@ -71,9 +65,9 @@ And people have been busy executing god-like tasks.
 			'https://pbs.twimg.com/media/F7bpua1WEAAwz7C?format=jpg&name=900x900'
 		],
 		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1707827931895017472/1-bUbTT3_400x400.jpg',
-			username: 'Darkwebhaber',
-			fullName: 'DarkWeb Haber'
+			avatar: 'https://images.icon-icons.com/35/PNG/512/supermanavatar_superhombr_2825.png',
+			username: 'Superman',
+			fullName: 'Clark Kent'
 		},
 		stats: {
 			comments: 234234,
@@ -84,20 +78,14 @@ And people have been busy executing god-like tasks.
 	},
 	{
 		id: '1708707876628476134',
-		content: `OpenAI's latest DALL-E 3 model is officially available free to try on Bing.
-
-The quality is insane, comparable to Midjourney.
-
-This prompt is going viral- mimicking a creepy iPhone capture that looks insanely realistic.
-
-Prompt in ALT tag + more examples in thread:`,
+		content: `Yaralarımı iyileştirebilirim, ama kalbimdeki boşluğu nasıl dolduracağım? Aşk bazen en keskin dövüşten bile daha zor. 💔`,
 		photos: [
 			'https://pbs.twimg.com/media/F7aKxHhaAAAnHlS?format=jpg&name=large'
 		],
 		account: {
-			avatar: 'https://pbs.twimg.com/profile_images/1617700070710992896/pF3T_gMB_400x400.jpg',
-			username: 'rowancheung',
-			fullName: 'Rowan Cheung',
+			avatar: 'https://avatarfiles.alphacoders.com/167/167654.png',
+			username: 'Wolverine',
+			fullName: 'Logan',
 			verified: true
 		},
 		stats: {
